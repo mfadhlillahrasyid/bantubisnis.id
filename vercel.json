@@ -1,4 +1,3 @@
 {
-  "buildCommand": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --minify",
   "outputDirectory": "public"
 }

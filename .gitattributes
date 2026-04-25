@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.css linguist-vendored
+*.md diff=markdown
+*.html diff=html
+*.js diff=js
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore

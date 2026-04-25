@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "@tailwindplus/elements": "^1.0.22",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "live-server": "^1.2.2"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --watch",
+    "serve": "live-server public --port=5500",
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
+  }
+}

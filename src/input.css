@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Google Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes float-card {
+    0%, 100% {
+        transform: translateY(0px) rotate(var(--r));
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(var(--r));
+    }
+}
+
+.swiper-logos-1 .swiper-wrapper {
+    /* linear = tidak ada easing, wajib untuk infinite scroll mulus */
+    transition-timing-function: linear !important;
+}

@@ -1,5 +1,6 @@
 // File: public/assets/js/main.js
 import { initServices } from './components/services.js';
+import { initHowItWorks } from './components/howitworks.js';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 5. Services — inject HTML ke DOM, lalu re-run lucide untuk icon di dalamnya
   initServices();
+  initHowItWorks();
   lucide.createIcons();
 
 });

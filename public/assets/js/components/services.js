@@ -1,7 +1,7 @@
 const servicesData = [
   {
     id: "paid-ads",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 lucide lucide-funnel-icon lucide-funnel"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg>`,
     title: "Paid Ads",
     subtitle: "Google Ads & Meta Ads",
     desc: "Iklan tepat sasaran ke calon pembeli yang sudah siap beli. Bukan bakar uang tapi investasi yang terukur dengan ROAS nyata.",
@@ -18,7 +18,7 @@ const servicesData = [
   },
   {
     id: "socmed",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg>`,
     title: "Social Media",
     subtitle: "Management & Content",
     desc: "Feed rapi, konten konsisten, komunitas aktif. Kami kelola sosmed kamu agar tetap relevan tanpa kamu harus pusing setiap hari.",
@@ -35,7 +35,7 @@ const servicesData = [
   },
   {
     id: "branding",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 lucide lucide-feather-icon lucide-feather"><path d="M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z"/><path d="M16 8 2 22"/><path d="M17.5 15H9"/></svg>`,
     title: "Branding",
     subtitle: "Identitas Visual & Brand",
     desc: "Logo, warna, tipografi, panduan brand semua dirancang agar bisnis kamu tampil profesional dan diingat pelanggan.",
@@ -53,7 +53,7 @@ const servicesData = [
   },
   {
     id: "webdev",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>`,
     title: "Web Development",
     subtitle: "Website & Landing Page",
     desc: "Website cepat, mobile-friendly, dan siap konversi. Mesin penjualan yang bekerja 24 jam bukan sekadar tampilan online.",
@@ -79,12 +79,12 @@ function renderSection() {
 
   section.innerHTML = `
     <!-- Header -->
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 p-6 sm:p-8 border-b border-olive-200">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 p-6">
       <div>
-        <div class="inline-block rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 px-3 py-2 text-xs font-medium mb-2">
+        <div class="inline-block rounded-lg bg-emerald-600 text-white px-3 py-2 text-xs font-medium mb-2">
             Layanan Kami
         </div>
-        <h2 class="text-3xl sm:text-4xl font-medium tracking-tight text-gray-900 leading-tight" style="font-family:'Google Sans','Poppins',sans-serif;letter-spacing:-0.025em;">
+        <h2 class="text-2xl sm:text-4xl font-medium tracking-tight text-gray-900 leading-tight">
           Semua yang Bisnis Kamu<br/>Butuhkan untuk Menang
         </h2>
         <p class="text-gray-500 text-sm leading-relaxed mt-3 max-w-md">
@@ -94,13 +94,13 @@ function renderSection() {
     </div>
 
     <!-- Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-x divide-y divide-olive-200">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
 
       ${servicesData
         .map(
           (s, i) => `
         <div
-          class="service-card group relative bg-olive-100 hover:bg-olive-200 p-6 cursor-pointer transition-all duration-500 ${i === 1 ? "lg:col-span-1" : ""}"
+          class="service-card group relative shadow-lg shadow-gray-700/5 bg-olive-50 hover:bg-olive-200 border border-olive-200 hover:border-olive-300 p-6 rounded-xl cursor-pointer transition-all duration-500 ${i === 1 ? "lg:col-span-1" : ""}"
           data-service-id="${s.id}"
           tabindex="0"
           role="button"
@@ -113,12 +113,15 @@ function renderSection() {
 
           <!-- Text -->
           <p class="text-[0.68rem] font-semibold tracking-widest uppercase text-gray-400 mb-1">${s.subtitle}</p>
-          <h3 class="text-lg font-medium text-gray-900 mb-2">${s.title}</h3>
+          <h3 class="text-lg font-medium text-gray-900 tracking-tight mb-2">${s.title}</h3>
           <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">${s.desc}</p>
 
           <!-- Learn more -->
-          <span class="inline-flex items-center gap-1 mt-7 text-sm font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
-            Pelajari lebih
+          <span class="inline-flex items-center gap-2 mt-7 text-sm font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+            Pelajari lebih 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3 -rotate-45 group-hover:rotate-0 transition-transform duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
           </span>
         </div>
       `,
@@ -126,16 +129,14 @@ function renderSection() {
         .join("")}
 
       <!-- CTA Card dark, span 2 cols di lg -->
-      <div class="relative overflow-hidden p-6 sm:p-8 lg:col-span-2
-                  bg-gray-900 flex flex-col justify-between min-h-50">
-        <!-- Glow -->
-        <div class="pointer-events-none absolute -top-16 -right-16 w-56 h-56 rounded-full
-                    bg-emerald-500/20 blur-3xl"></div>
-        <div class="pointer-events-none absolute -bottom-10 -left-10 w-40 h-40 rounded-full
-                    bg-emerald-400/10 blur-2xl"></div>
+      <div class="relative overflow-hidden p-6 sm:p-8 lg:col-span-2 rounded-xl
+                  bg-gray-900 flex flex-col justify-center items-center gap-6 min-h-50">
+        
+        <div
+        class="pointer-events-none absolute -bottom-100 sm:-bottom-70 left-1/2 -translate-x-1/2 translate-y-1/2 w-216 h-216 rounded-full bg-emerald-400/30 blur-3xl">
+      </div>
 
-        <div class="relative z-10">
-          <span class="inline-block text-2xl mb-3">🚀</span>
+        <div class="relative z-10 text-center">
           <h3 class="text-white font-bold text-xl mb-2" style="font-family:'Google Sans','Poppins',sans-serif;">
             Tidak tahu harus mulai dari mana?
           </h3>
@@ -144,19 +145,18 @@ function renderSection() {
           </p>
         </div>
 
-        <div class="relative z-10 flex flex-wrap gap-3 mt-6">
+        <div class="relative z-10 flex sm:flex-wrap gap-3">
           <a href="#kontak"
             class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400
-                   text-gray-900 text-sm font-bold px-5 py-2.5 rounded-full
+                   text-gray-900 text-sm font-medium px-5 py-2.5 rounded-full
                    transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/30">
             Konsultasi Gratis
-            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
           <a href="https://wa.me/6281234567890" target="_blank" rel="noopener"
             class="inline-flex items-center gap-2 border border-white/15 hover:border-white/35
                    text-white text-sm font-medium px-5 py-2.5 rounded-full
                    transition-all duration-200 hover:bg-white/5">
-            💬 WhatsApp
+            WhatsApp
           </a>
         </div>
       </div>
@@ -174,9 +174,13 @@ function buildModal(s) {
       <img src="${s.img}" alt="${s.title}"
            class="w-full h-52 object-cover rounded-t-2xl block" loading="lazy" />
       <button id="svcModalClose"
-        class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/45 hover:bg-black/70
+        class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-black/45 hover:bg-black/70 cursor-pointer
                text-white flex items-center justify-center text-base leading-none
-               transition-colors duration-150" aria-label="Tutup">✕</button>
+               transition-colors duration-150" aria-label="Tutup">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+      </button>
     </div>
 
     <!-- Body -->
@@ -187,8 +191,8 @@ function buildModal(s) {
           ${s.icon}
         </div>
         <div>
-          <p class="text-[0.65rem] font-semibold tracking-widest uppercase text-emerald-700">${s.subtitle}</p>
-          <h3 class="text-xl font-bold text-gray-900 leading-tight" style="font-family:'Google Sans','Poppins',sans-serif;">${s.title}</h3>
+          <p class="text-xs font-semibold tracking-widest uppercase text-emerald-700">${s.subtitle}</p>
+          <h3 class="text-xl font-semibold text-gray-900 tracking-tight leading-tight">${s.title}</h3>
         </div>
       </div>
 
@@ -220,7 +224,6 @@ function buildModal(s) {
                bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm
                px-5 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-emerald-200">
         Diskusikan Kebutuhan Saya
-        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
     </div>
   `;

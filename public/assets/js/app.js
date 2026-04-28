@@ -2,6 +2,7 @@
 import { initServices } from './components/services.js';
 import { initHowItWorks } from './components/howitworks.js';
 import { initStudyCase } from './components/studycase.js';
+import { registerLenis } from './utils/scrollLock.js';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 5. Services — inject HTML ke DOM, lalu re-run lucide untuk icon di dalamnya
+  registerLenis(lenis);
   initServices();
   initHowItWorks();
   initStudyCase();

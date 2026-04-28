@@ -189,15 +189,22 @@ function lockScroll() {
 }
 
 function unlockScroll() {
-  if (_lenisInstance) {
-    _lenisInstance.start(); // resume lenis
-  }
   document.body.style.position = "";
   document.body.style.top = "";
   document.body.style.left = "";
   document.body.style.right = "";
   document.body.style.overflowY = "";
+
   window.scrollTo({ top: _scrollY, behavior: "instant" });
+
+  // Tunggu browser selesai restore scroll position
+  // sebelum Lenis di-start lagi
+  setTimeout(() => {
+    if (_lenisInstance) {
+      _lenisInstance.scrollTo(_scrollY, { immediate: true });
+      _lenisInstance.start();
+    }
+  }, 50);
 }
 
 // ── BUILD MODAL HTML ─────────────────────
@@ -225,8 +232,7 @@ function buildCaseModal(c) {
     </div>
 
     <!-- Scrollable body -->
-    <div class="overflow-y-auto overscroll-contain flex-1 p-5 sm:p-7 space-y-6"
-         style="-webkit-overflow-scrolling:touch;">
+    <div class="p-6 space-y-6">
 
       <!-- Title -->
       <div>
@@ -398,7 +404,7 @@ function renderStudyCase() {
         .map(
           (c) => `
         <div
-          class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer bg-gray-900"
+          class="group relative aspect-4/3 sm:aspect-square rounded-2xl overflow-hidden cursor-pointer bg-gray-900"
           data-case-id="${c.id}"
         >
           <!-- BG Image -->

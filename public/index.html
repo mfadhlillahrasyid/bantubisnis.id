@@ -400,20 +400,21 @@
 
   <div id="sc-modal-overlay"
     class="fixed inset-0 z-999 flex items-end justify-center bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
-    
+
     <!-- Close btn -->
-    <button id="scModalClose"
-      class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-black/45 hover:bg-black/70 cursor-pointer
+    <button id="scModalClose" class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-black/45 hover:bg-black/70 cursor-pointer
               text-white flex items-center justify-center text-base leading-none
               transition-colors duration-150" aria-label="Tutup">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+        class="size-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
     </button>
 
     <div id="sc-modal-sheet"
       class="relative w-full max-w-full max-h-[90vh] overflow-y-auto bg-white shadow-2xl translate-y-4 transition-all duration-300 overscroll-contain"
-      style="scrollbar-width:none;">
+      style="scrollbar-width:none; transform: translateY(100%); 
+         transition: transform 0.38s cubic-bezier(0.32, 0.72, 0, 1);">
 
       <div id="sc-modal-content" class="max-w-2xl mx-auto">
       </div>

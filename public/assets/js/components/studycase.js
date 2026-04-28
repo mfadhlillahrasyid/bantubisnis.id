@@ -8,165 +8,160 @@
 
 const cases = [
   {
-    id: "restoran-hendra",
-    category: "Google Ads · Meta Ads",
-    title: "Restoran Pak Hendra",
-    subtitle: "Omzet naik 3× dalam 4 bulan",
-    img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
-    tags: ["Paid Ads", "Landing Page"],
+    id: "harford-institute",
+    category: "Meta Ads · Landing Page · Funnel Optimization",
+    title: "Harford Institute",
+    subtitle:
+      "Menyaring 'Junk Leads' dan Membangun Mesin Akuisisi Siswa Baru yang Scalable",
+    img: "https://harfordinstitute.com/wp-content/uploads/2026/02/IMG_0461_-_Copy_-_Copy_2-768x432.webp",
+    tags: ["Meta Ads", "Next.js Landing Page", "CRO"],
     overview:
-      "Restoran keluarga 10 tahun mengalami penurunan pelanggan 60% saat pandemi. Budget terbatas, zero presence digital sebelumnya, hampir menyerah.",
+      "Harford Institute memiliki program pendidikan berkualitas, namun terlalu bergantung pada pendaftaran offline dan word-of-mouth. Saat mencoba beralih ke digital, mereka membakar budget iklan tanpa ROI yang jelas karena sistem tracking dan funnel yang berantakan.",
     challenge:
-      "Tidak ada kehadiran digital sama sekali. Pelanggan tidak bisa datang fisik, tidak ada channel alternatif. Revenue turun 60% dalam sebulan pertama pandemi.",
+      "CPL (Cost Per Lead) Meta Ads sangat mahal dan didominasi oleh 'junk leads' (banyak chat WA yang ghosting). Selain itu, Landing Page lama sangat lambat (load time > 5 detik) dan pesannya tidak menjawab keraguan calon siswa atau orang tua.",
     solution:
-      "Setup Google Maps & Business Profile, kampanye Google Ads radius 5km dengan keyword intent tinggi, Meta Ads video makanan yang menggugah selera, landing page khusus promo take-away dan delivery.",
+      "Aku merombak arsitektur funnel secara menyeluruh. Dari sisi tech, aku rebuild Landing Page agar memuat di bawah 1.5 detik untuk menekan bounce rate. Dari sisi marketing, aku mengubah angle Meta Ads ke 'problem-solution' dan menambahkan mini-kuesioner (kualifikasi) di Landing Page sebelum user diarahkan ke CS. Ini memastikan hanya prospek dengan high-intent yang masuk.",
     results: [
-      { label: "Kenaikan omzet", value: "3×" },
-      { label: "ROI iklan", value: "450%" },
-      { label: "Pelanggan baru via online", value: "70%" },
-      { label: "Waktu", value: "4 bulan" },
+      { label: "Cost Per Lead (CPL)", value: "-45%" },
+      { label: "Lead to Enrollment Rate", value: "2.5× Naik" },
+      { label: "Pendaftaran Siswa Baru", value: "+120 di Q1" },
     ],
     testimonial: {
-      text: "Awalnya ragu karena hampir tidak ada modal. Tapi BantuBisnis paham kondisi kami — strategi yang mereka buat sesuai kantong, dan hasilnya jauh melebihi ekspektasi.",
-      name: "Hendra Kusuma",
-      role: "Owner Restoran Pak Hendra, Surabaya",
-      avatar: "https://i.pravatar.cc/56?img=11",
-    },
-  },
-  {
-    id: "batik-nusantara",
-    category: "Branding · Social Media",
-    title: "Batik Nusantara",
-    subtitle: "10K follower organik dalam 3 bulan",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-    tags: ["Branding", "Social Media"],
-    overview:
-      "Brand lokal dengan produk berkualitas tinggi tapi identitas visual tidak konsisten dan sosmed terbengkalai. Sulit bersaing melawan brand fashion massal.",
-    challenge:
-      "Brand terlihat tidak profesional meski kualitas produk bagus. Instagram hanya 200 follower, tidak ada konsistensi visual, tidak ada strategi konten.",
-    solution:
-      "Full rebranding — logo baru, panduan visual lengkap, tone of voice. Pengelolaan Instagram & TikTok dengan konten edukasi batik, storytelling pengrajin, dan behind-the-scene produksi.",
-    results: [
-      { label: "Follower organik", value: "10K+" },
-      { label: "Kenaikan penjualan online", value: "4×" },
-      { label: "Feature media lokal", value: "2×" },
-      { label: "Waktu", value: "3 bulan" },
-    ],
-    testimonial: {
-      text: "Branding baru dari BantuBisnis benar-benar mengubah cara orang memandang toko kami. Sekarang kami terlihat seperti brand yang layak diperhitungkan.",
-      name: "Wulandari Putri",
-      role: "Owner Batik Nusantara, Solo",
+      text: "Sistem funnel yang dibangun benar-benar menghemat waktu tim sales kami. Dulu CS kewalahan membalas chat yang tidak jelas, sekarang lead yang masuk sudah teredukasi dan siap mendaftar. ROI iklan kami akhirnya positif.",
+      name: "S.Suresh Kumar, S.Si.",
+      role: "Directur Harford Institute, Medan",
       avatar: "https://i.pravatar.cc/56?img=5",
     },
   },
   {
-    id: "klinik-sehat",
-    category: "SEO · Web Development",
-    title: "Klinik Sehat Prima",
-    subtitle: "Rank #1 Google dalam 5 bulan",
-    img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-    tags: ["SEO", "Web Dev"],
+    id: "mombee",
+    category: "Brand Identity · Web Performance · Lead Gen",
+    title: "Mombee",
+    subtitle: "Infrastruktur Web Anti-Down & Rebranding Premium untuk Expo Ibu & Anak Terbesar",
+    img: "https://mombee.id/wp-content/uploads/2024/05/Screen-Shot-2024-05-15-at-5.21.59-PM-1536x1154.png",
+    tags: ["High-Traffic Web", "Brand Identity", "Next.js", "Mobile UX"],
     overview:
-      "Klinik dengan pelayanan prima tapi hampir tidak terlihat di pencarian Google. Pasien baru hanya dari referral mulut ke mulut.",
+      "Mombee adalah pameran ibu dan anak berskala besar. Tantangan utama event lokal adalah citra visual yang sering terlihat seperti 'bazar biasa' dan infrastruktur IT yang tidak siap menghadapi lonjakan traffic mendadak dari ribuan pengunjung yang ingin mendaftar secara bersamaan.",
     challenge:
-      "Website lama lambat, tidak mobile-friendly, dan tidak ada di halaman pertama Google untuk satupun keyword relevan. Pasien baru stagnan.",
+      "Target audiens (ibu-ibu) 90% mengakses via mobile. Website lama sangat lambat dan rentan crash saat pengumuman tenant atau promo tiket. Secara visual, branding kurang meyakinkan untuk menarik sponsor tier-1 (brand multinasional) agar mau berinvestasi membuka booth eksklusif.",
     solution:
-      "Audit & optimasi SEO menyeluruh, rebuild website dengan UX konversi tinggi, produksi 20+ artikel kesehatan per bulan, optimasi Google Business Profile.",
+      "Dari sisi tech, aku membangun ulang website menggunakan arsitektur modern (Next.js) dengan Static Site Generation (SSG). Ini menghilangkan beban database saat user sekadar melihat jadwal/tenant, memastikan web memuat di bawah 1 detik di jaringan seluler lambat. Dari sisi branding, aku merancang identitas visual yang clean, modern, dan premium untuk meningkatkan daya tawar Mombee di hadapan sponsor raksasa.",
     results: [
-      { label: "Keyword di halaman 1 Google", value: "15" },
-      { label: "Kenaikan pasien baru online", value: "8×" },
-      { label: "Traffic website/bulan", value: "15K" },
-      { label: "Waktu", value: "5 bulan" },
+      { label: "Uptime saat Peak Traffic", value: "99.9%" },
+      { label: "Mobile Page Load", value: "< 1.2 Detik" },
+      { label: "Visitor Registration", value: "12,000+ Lead" },
     ],
     testimonial: {
-      text: "Hampir semua pasien baru sekarang bilang ketemu dari Google. Tim BantuBisnis paham betul kebutuhan klinik kecil yang tidak punya budget besar.",
-      name: "dr. Farid Rahman",
-      role: "Klinik Sehat Prima, Bandung",
-      avatar: "https://i.pravatar.cc/56?img=9",
+      text: "Seumur-umur bikin event, baru kali ini pas blast promo di Instagram web kita nggak down sama sekali. Tampilan baru juga bikin tim sales kami lebih pede saat presentasi pitching ke brand-brand besar.",
+      name: "Jessica Tania",
+      role: "Project Manager Mombee Expo",
+      avatar: "https://i.pravatar.cc/56?img=43",
     },
   },
   {
-    id: "griya-properti",
-    category: "Google Ads · Landing Page",
-    title: "Griya Properti",
-    subtitle: "150+ qualified leads per bulan",
-    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
-    tags: ["Paid Ads", "Landing Page"],
+    id: "briton-english-course-medan",
+    category: "Crisis Pivot · Funnel Optimization · Meta Ads",
+    title: "Briton English Course Medan",
+    subtitle: "Menyelamatkan Revenue Bimbingan Belajar via Digital Pivot di Era Pandemi",
+    img: "https://britonenglish.id/wp-content/uploads/2024/08/Rectangle-282-1.jpg",
+    tags: ["Meta Ads", "Landing Page", "Crisis Marketing", "Lead Gen"],
     overview:
-      "Agent properti dengan listing premium tapi leads yang masuk tidak berkualitas. CPL sangat tinggi, budget iklan boros.",
+      "Sebagai lembaga bahasa Inggris terbesar kedua di Medan, Briton menghadapi ancaman operasional masif saat pandemi mematikan sistem pendaftaran offline (walk-in). Tantangan utamanya adalah meyakinkan market bahwa kualitas belajar tidak menurun meski beralih sepenuhnya ke online.",
     challenge:
-      "CPL Rp250rb dengan closing rate hanya 3%. Budget iklan habis tanpa hasil yang sepadan. Landing page tidak dioptimasi untuk konversi.",
+      "Orang tua murid skeptis dengan efektivitas 'kelas Zoom' dan menahan budget pendidikan. Kampanye generik 'Di Rumah Aja' tidak cukup untuk menghasilkan konversi. Di sisi lain, infrastruktur digital mereka belum siap untuk mengakuisisi dan menyaring ratusan lead secara online tanpa membuat tim CS kewalahan.",
     solution:
-      "Redesign landing page dengan CTA kuat, Google Ads keyword intent tinggi, implementasi lead scoring, retargeting campaign untuk prospect yang belum closing.",
+      "Aku mengeksekusi pivot funnel secara cepat. Dari sisi marketing, aku menjalankan Meta Ads dengan angle 'Jangan biarkan masa depan anak tertunda karena pandemi' untuk menyentuh pain point orang tua. Trafik diarahkan ke Landing Page yang aku rancang khusus untuk menangani objection (menampilkan demo kelas online, kurikulum adaptif). LP ini menggunakan direct-to-WhatsApp routing dengan pre-filled message untuk mempercepat follow-up tim Sales.",
     results: [
-      { label: "Qualified leads/bulan", value: "150+" },
-      { label: "Penurunan CPL", value: "Rp45rb" },
-      { label: "Kenaikan closing rate", value: "12%" },
-      { label: "Waktu", value: "6 bulan" },
+      { label: "Cost Per Acquisition (CPA)", value: "-35%" },
+      { label: "Online Enrollment", value: "850+" },
+      { label: "Landing Page CVR", value: "12.4%" },
     ],
     testimonial: {
-      text: "CPL turun dari Rp250rb jadi Rp45rb. Closing rate naik 4×. Ini bukan sekadar iklan — ini sistem yang benar-benar bekerja.",
-      name: "Agus Setiawan",
-      role: "Owner Griya Properti, Jakarta",
-      avatar: "https://i.pravatar.cc/56?img=14",
+      text: "Transisi ke digital terasa sangat mulus. Funnel yang dibangun tidak hanya membantu kami bertahan saat cabang tutup total, tapi malah membuka keran pendaftaran baru dari luar radius cabang fisik kami.",
+      name: "Sir Richard",
+      role: "Branch Manager Briton Medan",
+      avatar: "https://i.pravatar.cc/56?img=15",
     },
   },
   {
-    id: "lesprivat-cerdas",
-    category: "SEO · Konten · Sosmed",
-    title: "LesPrivat Cerdas",
-    subtitle: "Traffic organik naik 500%",
-    img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
-    tags: ["SEO", "Konten", "Social Media"],
+    id: "baby-milano",
+    category: "E-Commerce Pivot · Automation · Meta Ads",
+    title: "Baby Milano Art",
+    subtitle: "Menyelamatkan Cash Flow Studio Foto Saat Lockdown via Automasi E-Commerce",
+    img: "https://babymilano.id/wp-content/uploads/2024/08/1.jpg",
+    tags: ["E-Commerce Web", "Payment Gateway", "Meta Ads", "Crisis Survival"],
     overview:
-      "Lembaga les privat lokal ingin ekspansi tapi tidak bisa bersaing secara iklan berbayar melawan platform edukasi besar.",
+      "Baby Milano adalah studio foto premium (Maternity, Newborn, Family) di Medan. Pandemi COVID-19 menghentikan total operasional fisik mereka. Tanpa sesi foto studio, cash flow terancam mati sementara biaya tetap terus berjalan. Bisnis butuh pivot cepat ke produk digital untuk bertahan hidup.",
     challenge:
-      "Budget tidak cukup untuk bersaing head-to-head dengan platform edukasi besar. Harus ada strategi yang bisa menghasilkan traffic tanpa bergantung pada iklan terus-menerus.",
+      "Produk digital (seperti jasa edit foto dari HP klien, template digital milestone bayi, dan pre-sale voucher) butuh volume penjualan besar agar terasa dampaknya. Masalahnya, memproses ratusan transaksi kecil secara manual via chat WhatsApp akan membuat tim admin kewalahan, rawan human-error, dan menyulitkan rekap keuangan.",
     solution:
-      "Fokus SEO lokal + konten edukatif — blog tips belajar, panduan orang tua, video pendek TikTok. Website dioptimasi secara hiperlokal untuk setiap kota target.",
+      "Aku mengeksekusi pivot digital secara end-to-end. Dari sisi tech, aku membangun sistem e-commerce ringan yang terintegrasi langsung dengan payment gateway. Aku setup automated email delivery: begitu klien membayar, file digital atau e-voucher otomatis terkirim tanpa campur tangan admin (zero friction). Dari sisi marketing, Meta Ads dijalankan dengan angle emosional: 'Momen emas bayimu tumbuh tidak bisa di-pause karena pandemi,' menargetkan ibu-ibu di Medan yang sedang hamil atau baru melahirkan.",
     results: [
-      { label: "Kenaikan traffic organik", value: "500%" },
-      { label: "Kenaikan pendaftaran murid", value: "70%" },
-      { label: "Kota masuk halaman 1 Google", value: "4" },
-      { label: "Waktu", value: "6 bulan" },
+      { label: "Admin Workload", value: "-80%" },
+      { label: "Transaksi Digital", value: "850+ Sales" },
+      { label: "Return on Ad Spend", value: "3.2x ROAS" },
     ],
     testimonial: {
-      text: "Sekarang murid baru terus datang tanpa harus bayar iklan terus-menerus. SEO yang BantuBisnis bangun jadi aset jangka panjang buat bisnis kami.",
-      name: "Ratna Sari",
-      role: "Owner LesPrivat Cerdas, Medan",
-      avatar: "https://i.pravatar.cc/56?img=20",
+      text: "Sistem otomatis yang dibangun benar-benar menjadi penyelamat napas bisnis kami saat studio dilarang buka berbulan-bulan. Uang tetap masuk ke rekening secara sistematis bahkan saat tim kami sedang tidur.",
+      name: "Felicia",
+      role: "Owner Baby Milano Art",
+      avatar: "https://i.pravatar.cc/56?img=32",
     },
   },
   {
-    id: "fitlife-studio",
-    category: "Branding · Web Dev",
-    title: "FitLife Studio",
-    subtitle: "Member baru naik 80% dalam 2 bulan",
-    img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
-    tags: ["Branding", "Web Dev"],
+    id: "maju-bersama-digitalindo",
+    category: "B2B Lead Gen · Tech Architecture · Authority Branding",
+    title: "Maju Bersama Digitalindo (MBD Corp)",
+    subtitle: "Membangun Mesin Akuisisi B2B Berkinerja Tinggi untuk Agensi Digital",
+    img: "https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-photos/40cabfcf9b2eda522f2543b5635a4ef4.jpg",
+    tags: ["Next.js / Tailwind", "B2B Funnel", "Technical SEO", "Lead Gen"],
     overview:
-      "Gym baru dengan fasilitas bagus tapi tampilan brand terkesan murahan. Gagal menarik member segmen menengah atas yang jadi target pasar utama.",
+      "Sebagai agensi digital yang sedang bertumbuh, MBD Corp membutuhkan lebih dari sekadar brosur online. Tantangan utamanya adalah menembus pasar yang jenuh dan meyakinkan klien B2B (pemilik bisnis) bahwa MBD Corp memiliki kapabilitas teknis dan marketing di atas rata-rata.",
     challenge:
-      "Brand tidak mencerminkan kualitas fasilitas yang sebenarnya. Target pasar segmen menengah atas tidak tertarik karena tampilan visual tidak premium.",
+      "Strategi 'exposure' di sosial media sering kali salah sasaran (menarik audiens non-klien). Selain itu, website agensi harus bisa menjadi bukti nyata (showcase) dari keahlian mereka. Jika website lambat atau tidak teroptimasi SEO, kredibilitas agensi di mata calon klien high-ticket akan langsung jatuh.",
     solution:
-      "Full rebranding premium — logo baru, panduan visual, website tampil layaknya gym high-end, kampanye sosmed dengan visual clean dan aspirasional.",
+      "Aku memposisikan website MBD Corp sebagai 'Proof of Concept'. Aku mendevelop situs ini menggunakan arsitektur modern (Next.js dan Tailwind) untuk memastikan skor Lighthouse hijau semua (>90) dan load-time instan, yang langsung menjadi selling point saat pitching ke klien. Untuk sosial media, aku merombak content funnel: berhenti membuat postingan generik, dan fokus membedah case study & ROI. Trafik dari sosmed lalu diarahkan ke landing page konsultasi yang dirancang untuk menyaring (kualifikasi) cold leads menjadi hot prospects.",
     results: [
-      { label: "Kenaikan member baru", value: "80%" },
-      { label: "Kenaikan avg. spending member", value: "40%" },
-      { label: "Break-even lebih cepat", value: "3 bln" },
-      { label: "Waktu", value: "2 bulan" },
+      { label: "Lighthouse Performance", value: "98/100" },
+      { label: "B2B Inbound Leads", value: "+45/Bulan" },
+      { label: "Client Closing Rate", value: "18% Naik" },
     ],
     testimonial: {
-      text: "Rebranding dari BantuBisnis benar-benar mengubah persepsi orang tentang gym kami. Member baru yang masuk sekarang adalah persis segmen yang kami targetkan.",
-      name: "Kevin Hartanto",
-      role: "Owner FitLife Studio, Bekasi",
-      avatar: "https://i.pravatar.cc/56?img=22",
+      text: "Website yang dibangun bukan cuma buat gaya-gayaan, tapi beneran jadi senjata utama tim sales kami saat pitching. Klien langsung percaya saat kami tunjukkan performa web kami sendiri. Lead yang masuk via sosmed sekarang juga jauh lebih berkualitas, bukan sekadar tanya harga lalu hilang.",
+      name: "Budi Santoso",
+      role: "Managing Director MBD Corp",
+      avatar: "https://i.pravatar.cc/56?img=12",
+    },
+  },
+  {
+    id: "ciptaland-development",
+    category: "High-Ticket Funnel · Lead Generation · Digital Asset Showcase",
+    title: "Ciptaland Development",
+    subtitle: "Mengonversi Ketidakpastian Ekonomi Menjadi Peluang Investasi Properti Premium",
+    img: "https://www.ciptaland.com/img/cr1/3.jpg",
+    tags: ["Investor Targeting", "Performance Marketing", "High-Res Optimization", "B2C Sales"],
+    overview:
+      "Ciptaland Development adalah pemain besar di sektor properti Medan. Saat pandemi, strategi pemasaran konvensional (pameran mall & kanvasing) mati total. Properti yang biasanya butuh kunjungan fisik harus dipasarkan secara digital kepada segmen yang paling 'liquid' saat krisis: Businessman dan Investor.",
+    challenge:
+      "Menjual barang seharga miliaran rupiah lewat layar smartphone sangatlah sulit. Masalah utamanya adalah 'Trust Gap'. Selain itu, website properti biasanya dipenuhi aset gambar high-res yang tidak teroptimasi, menyebabkan bounce rate tinggi di perangkat mobile, yang justru merupakan perangkat utama para pengusaha sibuk.",
+    solution:
+      "Aku merancang strategi 'Investment-First'. Dari sisi marketing, iklan Meta Ads tidak lagi menjual 'rumah tinggal', melainkan menjual 'instrumen investasi yang aman dari inflasi'. Dari sisi tech, aku membangun landing page yang didedikasikan untuk showcase unit dengan teknik lazy-loading dan kompresi gambar tingkat tinggi (WebP) tanpa mengurangi kualitas visual. Aku juga mengintegrasikan sistem tracking pixel yang presisi untuk melakukan retargeting kepada mereka yang berlama-lama melihat halaman 'Price List'—indikator kuat mereka adalah hot prospects.",
+    results: [
+      { label: "Cost Per Qualified Lead", value: "-40%" },
+      { label: "Unit Booking Fee (Online)", value: "24 Unit/Bulan" },
+      { label: "Engagement Rate Investor", value: "3.5× Naik" },
+    ],
+    testimonial: {
+      text: "Awalnya kami skeptis bisa menjual properti saat orang dilarang keluar rumah. Tapi sistem digital yang dibangun terbukti mampu menyaring leads berkualitas tinggi. Para pengusaha tetap membeli meski hanya melihat dari website yang responsif dan informatif.",
+      name: "Andi Wijaya",
+      role: "Head of Marketing Ciptaland",
+      avatar: "https://i.pravatar.cc/56?img=33",
     },
   },
 ];
 
 // ── SCROLL LOCK (lenis-safe) ─────────────
-// Tidak pakai overflow:hidden — tidak kompatibel dengan Lenis
+// Tidak pakai overflow:hidden tidak kompatibel dengan Lenis
 // Pakai position:fixed + simpan scroll position
 
 let _lenisInstance = null;
@@ -188,69 +183,68 @@ function lockScroll() {
   document.body.style.overflowY = "scroll";
 }
 
+// studycase.js — di fungsi unlockScroll
 function unlockScroll() {
   document.body.style.position = "";
   document.body.style.top = "";
   document.body.style.left = "";
   document.body.style.right = "";
   document.body.style.overflowY = "";
-
   window.scrollTo({ top: _scrollY, behavior: "instant" });
 
-  // Tunggu browser selesai restore scroll position
-  // sebelum Lenis di-start lagi
   setTimeout(() => {
     if (_lenisInstance) {
       _lenisInstance.scrollTo(_scrollY, { immediate: true });
       _lenisInstance.start();
     }
-  }, 50);
+  }, 300); // ← naikan ke 300ms dulu untuk test
 }
 
 // ── BUILD MODAL HTML ─────────────────────
 
 function buildCaseModal(c) {
   return `
-    <!-- Header image -->
-    <div class="relative aspect-video shrink-0 overflow-hidden">
-      <img src="${c.img}" alt="${c.title}"
-           class="w-full h-full object-cover" loading="lazy" />
-      <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
-
-      <!-- Tags -->
-      <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
-        ${c.tags
-          .map(
-            (t) => `
-          <span class="text-[0.65rem] font-semibold bg-white/15 backdrop-blur-sm
-                       border border-white/20 text-white rounded-full px-2.5 py-1">
-            ${t}
-          </span>`,
-          )
-          .join("")}
-      </div>
-    </div>
-
     <!-- Scrollable body -->
-    <div class="p-6 space-y-6">
+    <div class="flex items-center justify-center my-2">
+      <div class="py-1 bg-gray-200 text-center rounded-full w-14 "></div>
+    </div>
+    <div class="p-4 space-y-6">
+      <!-- Header image -->
+      <div class="relative aspect-video shrink-0 overflow-hidden rounded-xl">
+        <img src="${c.img}" alt="${c.title}"
+            class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <!-- Tags -->
+        <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+          ${c.tags
+            .map(
+              (t) => `
+            <span class="text-xs font-semibold bg-white/15 backdrop-blur-sm
+                        border border-white/20 text-white rounded-lg px-2.5 py-1">
+              ${t}
+            </span>`,
+            )
+            .join("")}
+        </div>
+      </div>
 
       <!-- Title -->
       <div>
-        <p class="text-xs font-semibold tracking-widest uppercase text-emerald-600 mb-1">${c.category}</p>
-        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 leading-snug"
+        <p class="text-xs sm:text-sm font-medium text-emerald-600 mb-1">${c.category}</p>
+        <h3 class="text-xl sm:text-2xl font-semibold text-gray-900 leading-snug"
             style="font-family:'Google Sans','Poppins',sans-serif;">${c.title}</h3>
         <p class="text-sm text-gray-500 mt-1">${c.subtitle}</p>
       </div>
 
       <!-- Results grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
         ${c.results
           .map(
             (r) => `
           <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-3 text-center">
-            <div class="text-xl sm:text-2xl font-bold text-emerald-700"
-                 style="font-family:'Google Sans','Poppins',sans-serif;">${r.value}</div>
-            <div class="text-[0.65rem] text-gray-500 mt-0.5 leading-tight">${r.label}</div>
+            <div class="text-xl sm:text-2xl font-semibold tracking-tight text-emerald-700">${r.value}</div>
+            <div class="text-xs text-gray-500 mt-2 leading-tight">${r.label}</div>
           </div>`,
           )
           .join("")}
@@ -258,23 +252,22 @@ function buildCaseModal(c) {
 
       <!-- Overview / Challenge / Solution -->
       <div class="space-y-4">
-        <div class="bg-gray-50 rounded-xl p-4">
-          <p class="text-[0.65rem] font-bold uppercase tracking-widest text-gray-400 mb-1.5">Overview</p>
-          <p class="text-sm text-gray-600 leading-relaxed">${c.overview}</p>
+        <div class="bg-gray-50 border border-gray-100 rounded-xl p-4">
+          <p class="text-xs sm:text-sm font-medium text-gray-400 mb-2">Overview</p>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">${c.overview}</p>
         </div>
         <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-          <p class="text-[0.65rem] font-bold uppercase tracking-widest text-red-400 mb-1.5">🎯 Tantangan</p>
-          <p class="text-sm text-gray-600 leading-relaxed">${c.challenge}</p>
+          <p class="text-xs sm:text-sm font-medium text-red-400 mb-2">Tantangan</p>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">${c.challenge}</p>
         </div>
         <div class="bg-blue-50 border border-blue-100 rounded-xl p-4">
-          <p class="text-[0.65rem] font-bold uppercase tracking-widest text-blue-400 mb-1.5">⚡ Solusi</p>
-          <p class="text-sm text-gray-600 leading-relaxed">${c.solution}</p>
+          <p class="text-xs sm:text-sm font-medium text-blue-400 mb-2">Solusi</p>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">${c.solution}</p>
         </div>
       </div>
 
       <!-- Testimonial -->
       <div class="bg-gray-900 rounded-xl p-5">
-        <p class="text-2xl text-emerald-400 font-serif leading-none mb-2">"</p>
         <p class="text-sm text-gray-300 leading-relaxed italic mb-4">${c.testimonial.text}</p>
         <div class="flex items-center gap-3">
           <img src="${c.testimonial.avatar}" alt="${c.testimonial.name}"
@@ -289,13 +282,10 @@ function buildCaseModal(c) {
       <!-- CTA -->
       <a href="#kontak" id="scModalCta"
         class="flex items-center justify-center gap-2 w-full
-               bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm
+               bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm
                px-5 py-3.5 rounded-xl transition-all duration-200
                hover:shadow-lg hover:shadow-emerald-200">
         Saya Mau Hasil Serupa
-        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
       </a>
 
     </div>
@@ -353,7 +343,7 @@ function initCaseModal() {
       overlay.classList.add("pointer-events-none");
       content.innerHTML = "";
       unlockScroll();
-    }, 380);
+    }, 300);
   }
 
   // Backdrop click
@@ -366,7 +356,7 @@ function initCaseModal() {
     if (e.key === "Escape") close();
   });
 
-  // Card clicks — event delegation
+  // Card clicks event delegation
   document
     .getElementById("studycase-section")
     ?.addEventListener("click", (e) => {
@@ -381,6 +371,8 @@ function renderStudyCase() {
   const el = document.getElementById("studycase-section");
   if (!el) return;
 
+  const shuffled = [...cases].sort(() => Math.random() - 0.5).slice(0, 6);
+
   el.innerHTML = `
     <!-- Header -->
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 p-6">
@@ -388,19 +380,18 @@ function renderStudyCase() {
         <div class="inline-block rounded-lg bg-emerald-600 text-white px-3 py-2 text-xs font-medium mb-2">
           Study Case
         </div>
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 leading-tight"
-            style="font-family:'Google Sans','Poppins',sans-serif;">
+        <h2 class="text-2xl sm:text-3xl font-medium tracking-tight text-gray-900 leading-tight">
           Hasil Kerja yang<br/>Bicara Sendiri
         </h2>
       </div>
-      <p class="text-sm text-gray-500 leading-relaxed max-w-lg">
+      <p class="text-sm sm:text-base text-gray-500 leading-relaxed max-w-lg">
         Dari bisnis yang hampir tutup, sampai akhirnya bisa scale-up setiap angka punya ceritanya.
       </p>
     </div>
 
     <!-- Grid -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-      ${cases
+      ${shuffled
         .map(
           (c) => `
         <div
@@ -432,7 +423,7 @@ function renderStudyCase() {
             <p class="text-white/60 text-xs">${c.subtitle}</p>
           </div>
 
-          <!-- CTA button — muncul saat hover -->
+          <!-- CTA button muncul saat hover -->
           <div class="absolute inset-0 flex items-center justify-center
                       opacity-0 group-hover:opacity-100
                       translate-y-2 group-hover:translate-y-0

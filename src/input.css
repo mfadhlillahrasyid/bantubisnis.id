@@ -5,6 +5,43 @@
     --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
+#mobile-menu {
+    --duration: 320ms;
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+#mobile-menu[open] el-dialog-panel {
+    animation: slideInRight 420ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+#mobile-menu.closing el-dialog-panel {
+    animation: slideOutRight 420ms cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(110%);
+        opacity: 0;
+    }
+}
+
 @keyframes float-card {
     0%, 100% {
         transform: translateY(0px) rotate(var(--r));
@@ -18,4 +55,51 @@
 .swiper-logos-1 .swiper-wrapper {
     /* linear = tidak ada easing, wajib untuk infinite scroll mulus */
     transition-timing-function: linear !important;
+}
+
+.testi-col-track {
+    display: flex;
+    flex-direction: column;
+    will-change: transform;
+}
+
+@keyframes testiScrollUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes testiScrollDown {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.swiper-logos-1 {
+    pointer-events: none;
+}
+
+.swiper-testi-1,
+.swiper-testi-2 {
+    align-items: stretch;
+    pointer-events: none;
+}
+
+.swiper-testi-1 .swiper-wrapper,
+.swiper-testi-2 .swiper-wrapper {
+    align-items: stretch;
+    transition-timing-function: linear !important;
+}
+
+.swiper-testi-1 .swiper-slide,
+.swiper-testi-2 .swiper-slide {
+    height: auto;
 }

@@ -84,10 +84,10 @@ function renderSection() {
         <div class="inline-block rounded-lg bg-emerald-600 text-white px-3 py-2 text-xs font-medium mb-2">
             Layanan Kami
         </div>
-        <h2 class="text-2xl sm:text-4xl font-medium tracking-tight text-gray-900 leading-tight">
+        <h2 class="text-2xl sm:text-3xl font-medium tracking-tight text-gray-900 leading-tight">
           Semua yang Bisnis Kamu<br/>Butuhkan untuk Menang
         </h2>
-        <p class="text-gray-500 text-sm leading-relaxed mt-3 max-w-md">
+        <p class="text-gray-500 text-sm sm:text-base leading-relaxed mt-3 max-w-md">
           Strategi digital yang terukur, dieksekusi oleh tim yang paham kondisi UMKM Indonesia.
         </p>
       </div>
@@ -146,17 +146,11 @@ function renderSection() {
         </div>
 
         <div class="relative z-10 flex sm:flex-wrap gap-3">
-          <a href="#kontak"
+          <a href="https://api.whatsapp.com/send/?phone=+6281260779669&text=Halo+mau+nanya+soal+service+Bantu+Bisnis&type=phone_number&app_absent=0" target="_blank"
             class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400
-                   text-gray-900 text-sm font-medium px-5 py-2.5 rounded-full
+                   text-gray-900 text-sm font-medium px-5 py-3 rounded-xl
                    transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/30">
             Konsultasi Gratis
-          </a>
-          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener"
-            class="inline-flex items-center gap-2 border border-white/15 hover:border-white/35
-                   text-white text-sm font-medium px-5 py-2.5 rounded-full
-                   transition-all duration-200 hover:bg-white/5">
-            WhatsApp
           </a>
         </div>
       </div>
@@ -231,15 +225,22 @@ function buildModal(s) {
 // ── Ganti fungsi open, close, dan initModal di Services.js dengan ini ──
 
 // Simpan scroll position sebelum lock
+// services.js — tambahkan di atas file
+let _lenisInstance = null;
 let _scrollY = 0;
+
+export function registerLenis(lenis) {
+  _lenisInstance = lenis;
+}
 
 function lockScroll() {
   _scrollY = window.scrollY;
+  if (_lenisInstance) _lenisInstance.stop(); // ← tambahkan ini
   document.body.style.position = "fixed";
   document.body.style.top = `-${_scrollY}px`;
   document.body.style.left = "0";
   document.body.style.right = "0";
-  document.body.style.overflowY = "scroll"; // cegah layout shift dari scrollbar
+  document.body.style.overflowY = "scroll";
 }
 
 function unlockScroll() {
@@ -248,17 +249,14 @@ function unlockScroll() {
   document.body.style.left = "";
   document.body.style.right = "";
   document.body.style.overflowY = "";
-
   window.scrollTo({ top: _scrollY, behavior: "instant" });
 
-  // Tunggu browser selesai restore scroll position
-  // sebelum Lenis di-start lagi
   setTimeout(() => {
     if (_lenisInstance) {
       _lenisInstance.scrollTo(_scrollY, { immediate: true });
       _lenisInstance.start();
     }
-  }, 50);
+  }, 300); // ← naikan ke 300ms dulu untuk test
 }
 
 function initModal() {
@@ -299,11 +297,11 @@ function initModal() {
 
     setTimeout(() => {
       overlay.classList.add("pointer-events-none");
-      unlockScroll();
-    }, 300);
+      unlockScroll(); // unlock dipanggil setelah animasi
+    }, 300); // sesuaikan dengan timeout unlockScroll
   }
 
-  // Backdrop click — hanya trigger close jika klik di overlay, bukan inner
+  // Backdrop click hanya trigger close jika klik di overlay, bukan inner
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) close();
   });

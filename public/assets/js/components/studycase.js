@@ -284,7 +284,7 @@ function buildCaseModal(c) {
         class="flex items-center justify-center gap-2 w-full
                bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm
                px-5 py-3.5 rounded-xl transition-all duration-200
-               hover:shadow-lg hover:shadow-emerald-200">
+               hover:shadow-lg hover:shadow-emerald-200 mb-4">
         Saya Mau Hasil Serupa
       </a>
 

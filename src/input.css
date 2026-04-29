@@ -5,42 +5,7 @@
     --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
-#mobile-menu {
-    --duration: 320ms;
-    --ease: cubic-bezier(0.32, 0.72, 0, 1);
-}
 
-#mobile-menu[open] el-dialog-panel {
-    animation: slideInRight 420ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-#mobile-menu.closing el-dialog-panel {
-    animation: slideOutRight 420ms cubic-bezier(0.4, 0, 1, 1) forwards;
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideOutRight {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(110%);
-        opacity: 0;
-    }
-}
 
 @keyframes float-card {
     0%, 100% {

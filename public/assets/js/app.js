@@ -22,21 +22,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openMenu() {
     mobileMenu.showModal();
+    // Paksa browser render dulu sebelum animasi in
+    requestAnimationFrame(() => {
+      mobileMenu.classList.remove("closing");
+    });
   }
 
   function closeMenu() {
+    if (mobileMenu.classList.contains("closing")) return; // cegah double-trigger
     mobileMenu.classList.add("closing");
     setTimeout(() => {
       mobileMenu.classList.remove("closing");
       mobileMenu.close();
-    }, 380); // sesuai duration slideOutRight
+    }, 0);
   }
 
   openMenuBtn?.addEventListener("click", openMenu);
   closeMenuBtn?.addEventListener("click", closeMenu);
 
   document.querySelectorAll("#mobile-menu a").forEach((link) => {
-    link.addEventListener("click", closeMenu);
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = link.getAttribute("href");
+      closeMenu();
+      setTimeout(() => {
+        const target = document.querySelector(href);
+        if (target) lenis.scrollTo(target, { offset: -80, duration: 1.2 });
+      }, 0); // tunggu animasi close selesai baru scroll
+    });
   });
 
   mobileMenu?.addEventListener("click", (e) => {
